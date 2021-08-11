@@ -70,6 +70,10 @@ body {
    color: rgb(56, 71, 79);
 }
 
+#main-nav .link-list a.promo-link, a.promo-link {
+   color: rgb(0, 0, 255);
+}
+
 #main {
    width: 96vw;
    height: auto;

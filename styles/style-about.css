@@ -66,3 +66,45 @@
    margin-top: 0.75rem;
 }
 
+div.promo-space {
+   margin-bottom: 12vh;
+}
+
+.promo-video {
+   width: min-content;
+   margin: 0 auto 12vh;
+}
+
+.promo-video > p {
+   font-size: 1rem;
+   font-weight: 600;
+   text-align: center;
+   color:rgb(56, 71, 79);
+}
+
+.ableton-a1 {
+   display: flex;
+   flex-direction: row;
+   /* column-gap: 16%; */
+   width: 92.5%;
+   margin-left: 7.5% ;
+}
+
+.ableton-a1 > img:nth-of-type(1) {
+   width: 48%;
+   padding: 12vh 0 12vh;
+   z-index: 2;
+}
+
+.ableton-a1 > img:nth-of-type(2) {
+   box-sizing: content-box;
+   width: 35.5%;
+   
+   margin-left: -6.5%;
+   padding-right: 8%;
+   padding-left: 15%;
+   padding-top: 14vh;
+   padding-bottom: 14vh;
+   align-self: center;
+   background-color: rgb(251, 255, 167);
+}

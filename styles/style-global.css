@@ -61,7 +61,7 @@ body {
 
 #main-nav .link-list.right-align {
    margin-left: auto;
-   margin-right: calc(2rem + 5px);
+   margin-right: calc(2rem + 10px);
 }
 
 #main-nav .link-list a {
@@ -73,6 +73,7 @@ body {
 #main {
    width: 96vw;
    height: auto;
+   padding-top: 1.2rem;
    border-bottom: 2px solid rgb(220, 220, 220);
    background-color: rgb(255, 255, 255);
 }

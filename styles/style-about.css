@@ -1,0 +1,44 @@
+#main.about-page > #secondary-nav {
+   display: flex;
+   flex-direction: row;
+   column-gap: 2rem;
+   margin-bottom: 1.2rem;
+   margin-left: calc(2rem + 10px);
+}
+
+.about-page > #secondary-nav > a {
+   font-size: 1rem;
+   font-weight: 600;
+   color: rgb(56, 71, 79);
+}
+
+.about-page > #secondary-nav > a {
+   color:rgb(56, 71, 79);
+}
+
+.about-page > #secondary-nav > a:first-child {
+   color: rgb(255, 118, 77);
+}
+
+.ableton-banner {
+   position: relative;
+   max-width: 85%;
+   margin: 0 auto 12vh;
+   
+}
+
+.ableton-banner > img {
+   display: inline-block;
+   max-width: 100%;
+}
+
+.ableton-banner > h1 {
+   position: absolute;
+   top: 36%;
+   left: 32%;
+   font-size: 10vw;
+   font-weight: 400;
+   color:rgb(255, 118, 77);
+   text-shadow: 5px 5px 20px rgb(56, 71, 79);
+}
+

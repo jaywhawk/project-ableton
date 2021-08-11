@@ -1,0 +1,84 @@
+/* 
+Source Sans Pro Details:
+Extra-Light 200, Extra-Light 200 Italic
+Light 300, Light 300 Italic
+Regular 400, Regular 400 Italic
+Semi-Bold 600, Semi-Bold 600 Italic
+Bold 700, Bold 700 Italic
+Black 900, Black 900 Italic 
+*/
+
+
+/* Reset Code */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+a {
+   text-decoration: none;
+}
+
+/* Global Stylesheet */
+
+body {
+   font-family: 'Source Sans Pro', sans-serif;
+   background-color: rgb(243, 243, 243);
+   margin: 0 2vw;
+}
+
+#header {
+   width: 96vw;
+   height: 80px;
+   border-bottom: 2px solid rgb(220, 220, 220);
+   background-color: rgb(255, 255, 255);
+}
+
+#main-nav {
+   display: grid;
+   grid-template-columns: 120px 2fr 1fr;
+   grid-template-rows: auto;
+   align-items: center;
+}
+
+#main-nav .logo-container {
+   margin-left: 2rem;
+}
+
+#main-nav .logo-container .ableton-logo {
+   width: auto;
+   height: 78px;
+}
+
+#main-nav .link-list {
+   display: flex;
+   flex-direction: row;
+   column-gap: 2rem;
+   align-items: flex-start;
+   margin-top: -5px;
+}
+
+#main-nav .link-list.right-align {
+   margin-left: auto;
+   margin-right: calc(2rem + 5px);
+}
+
+#main-nav .link-list a {
+   font-size: 1.2rem;
+   font-weight: 600;
+   color: rgb(56, 71, 79);
+}
+
+#main {
+   width: 96vw;
+   height: auto;
+   border-bottom: 2px solid rgb(220, 220, 220);
+   background-color: rgb(255, 255, 255);
+}
+
+#footer {
+   width: 96vw;
+   height: auto;
+   background-color: rgb(255, 255, 255);
+}

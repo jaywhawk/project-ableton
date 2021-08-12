@@ -124,42 +124,30 @@
       "img-2 img-3"
       "img-2 .";
 
-   width: 92.5%;
-   margin-left: auto;
+   width: 85%;
+   margin-left: 7.5%;
    margin-right: 7.5%;
+
 }
 
 .ableton-a2 > img:first-of-type {
    grid-area: img-1;
    align-self: center;
    box-sizing: content-box;
-   width: 500px;
-   height: 350px;
-   padding-left: calc(18% + 4px);
-   padding-right: 58%;
-   padding-top: 10vh;
-   padding-bottom: 8vh;
-   background-color: rgb(182, 255, 192);
+   width: 85%;
+
 }
 
 .ableton-a2 > img:nth-of-type(2) {
    grid-area: img-2;
    align-self: center;
    box-sizing: content-box;
-   width: 500px;
-   height: 350px;
-   padding-left: calc(18% + 4px);
-   padding-right: 58%;
-   padding-top: 8vh;
-   padding-bottom: 10vh;
-   background-color: rgb(182, 255, 192);
+   width: 85%;
 }
 
 .ableton-a2 > img:last-of-type {
    grid-area: img-3;
    justify-self: right;
    align-self: center;
-
-   width: 700px;
-   height: 700px;
+   width: 85%;
 }

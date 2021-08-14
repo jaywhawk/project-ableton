@@ -1,0 +1,10 @@
+@media all and (max-width: 1425px) {
+   /* * For About-Page Styles */
+   .job-teaser {
+      grid-template-rows: 50vh;
+   }
+
+   .job-teaser-text {
+      padding: 5rem 4.5rem 0 5rem;
+   }
+}

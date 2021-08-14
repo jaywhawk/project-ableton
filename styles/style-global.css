@@ -59,6 +59,23 @@ body {
    margin-top: -5px;
 }
 
+#main-nav .link-list > .more-nav {
+   color: rgb(255, 118, 77);
+   display: flex;
+   flex-direction: row;
+   column-gap: .75rem;
+
+}
+
+.more-nav > span:first-child {
+   display: block;
+}
+
+.more-nav span:last-child {
+   display: block;
+   margin-top: 1px;
+}
+
 #main-nav .link-list.right-align {
    margin-left: auto;
    margin-right: calc(2rem + 10px);

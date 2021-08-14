@@ -87,3 +87,208 @@ body {
    height: auto;
    background-color: rgb(255, 255, 255);
 }
+
+.footer-grid {
+   display: grid;
+   grid-template-columns: 3fr 3fr 4fr;
+   grid-template-rows: 13vh 20vh 5vh 20vh 50px;
+   
+   grid-template-areas:
+      "header header header"
+      "ableton-connect edu-connect newsletter"
+      "social-connect edu-connect newsletter"
+      "community-connect distro-connect location-lang"
+      "bottom-bar bottom-bar bottom-bar";
+
+   width: 85%;
+   margin-left: 7.5%;
+   margin-right: 7.5%;
+   padding-top: 12vh;
+   padding-bottom: 12vh;
+}
+
+#footer header {
+   grid-area: header;
+   align-self: start;
+}
+
+#footer header > h3 {
+   font-size: 3.6rem;
+   font-weight: 600;
+   color: rgb(56, 71, 79);
+}
+
+#footer section > h4 {
+   font-size: 1.2rem;
+   font-weight: 600;
+   color: rgb(56, 71, 79);
+}
+
+#footer section > p {
+   font-size: 1.1rem;
+   font-weight: 400;
+   color: rgb(56, 71, 79);
+}
+
+#footer section > a {
+   font-size: 1.1rem;
+   font-weight: 400;
+   color: rgb(56, 71, 79);
+}
+
+#footer .ableton-connections {
+   grid-area: ableton-connect;
+   display: flex;
+   flex-direction: column;
+   row-gap: .5rem;
+}
+
+#footer .social-connections {
+   grid-area: social-connect;
+   display: flex;
+   flex-direction: row;
+   column-gap: .5rem;
+   margin-top: -10vh;
+}
+
+#footer .social-connections img {
+   width: 40px;
+}
+
+#footer .community-connections {
+   grid-area: community-connect;
+   display: flex;
+   flex-direction: column;
+   row-gap: .5rem;
+}
+
+#footer .education-connections {
+   grid-area: edu-connect;
+   display: flex;
+   flex-direction: column;
+   row-gap: .5rem;
+}
+
+#footer .distribution-connections {
+   grid-area: distro-connect;
+   display: flex;
+   flex-direction: column;
+   row-gap: .5rem;
+}
+
+#footer .newsletter-subscription {
+   grid-area: newsletter;
+   display: flex;
+   flex-direction: column;
+   row-gap: .5rem;
+}
+
+.subscription-form {
+   margin-top: .5rem;
+}
+
+.subscription-form input[type="email"] {
+   width: 75%;
+   height: 2.5rem;
+   padding: 0.25rem 1rem;
+   border: none;
+   font-size: 1.1rem;
+   color: darkslategray;
+   background-color: rgb(243, 243, 243);
+}
+
+.subscription-form input[type="submit"] {
+   width: 25%;
+   height: 2.5rem;
+   margin-left: -0.2rem;
+   padding: 0.25rem 0.25rem;
+   border: none;
+   font-size: 1.1rem;
+   color: rgb(255, 255, 255);
+   background-color: rgb(0, 0, 255);
+}
+
+#footer .location-and-language {
+   grid-area: location-lang;
+   width: 80%;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: 40px 50px;
+
+   grid-template-areas:
+      "header header header"
+      "language location location";
+}
+
+.location-and-language > h4 {
+   grid-area: header;
+}
+
+.location-and-language > .language-form {
+   grid-area: language;
+}
+
+.location-and-language > .language-form select {
+   width: 95%;
+   height: 2rem;
+   padding: 0.25rem .5rem;
+   border: none;
+   font-size: .9rem;
+   color: darkslategray;
+   background-color: rgb(243, 243, 243);
+}
+
+.location-and-language > .location-form select {
+   width: 95%;
+   height: 2rem;
+   padding: 0.25rem .5rem;
+   border: none;
+   font-size: .9rem;
+   color: darkslategray;
+   background-color: rgb(243, 243, 243);
+}
+
+.location-and-language > .location-form {
+   grid-area: location;
+}
+
+#footer .bottom-bar {
+   grid-area: bottom-bar;
+   display: flex;
+   flex-direction: row;
+}
+
+#footer .bottom-bar-links {
+   align-self: center;
+
+   display: flex;
+   flex-direction: row;
+   column-gap: 1rem;
+}
+
+#footer .bottom-bar-links > a {
+   font-size: .8rem;
+   font-weight: 600;
+   color:rgb(56, 71, 79);  
+}
+
+#footer .made-in-berlin {
+   margin-left: auto;
+   display: flex;
+   flex-direction: row;
+   column-gap: 1rem;
+}
+
+#footer .made-in-berlin > p {
+   align-self: center;
+   font-size: .8rem;
+   font-weight: 600;
+   color: rgb(56, 71, 79);
+}
+
+#footer .made-in-berlin > img {
+   display: block;
+   align-self: center;
+   width: auto;
+   height: 48px;
+}

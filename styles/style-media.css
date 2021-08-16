@@ -8,3 +8,116 @@
       padding: 5rem 4.5rem 0 5rem;
    }
 }
+
+
+@media all and (max-width: 1280px) {
+   /* ! For Global Styles */
+   #main-nav {
+      grid-template-columns: 120px 1.2fr 1fr;
+   }
+
+   .footer-grid {
+      grid-template-columns: 2.5fr 3fr 4fr;
+      grid-template-rows: 10vh 15vh 5vh 15vh 50px;
+   }
+
+   #footer .social-connections {
+      margin-top: -5vh;
+   }
+
+   .subscription-form input[type="email"] {
+      width: 65%;
+   }
+
+   /* * For About Page Styles */
+   .job-teaser {
+      grid-template-rows: 40vh;
+   }
+
+   .job-teaser-text {
+      padding: 3rem 2.5rem 0 3rem;
+   }
+
+   .job-teaser-text > p {
+      margin-bottom: 1.5rem;
+   }
+}
+
+
+@media all and (max-width: 1200px) {
+   /* ! For Global Styles */
+   .footer-grid {
+      grid-template-columns: 2fr 3fr 4fr;
+      grid-template-rows: 8vh 12vh 3vh 12vh 32px;
+   }
+   
+   #footer header > h3 {
+      font-size: 2.4rem;
+   }
+
+   #footer section > h4 {
+      font-size: 1rem;
+   }
+
+   #footer section > p, #footer section > a {
+      font-size: 0.8rem;
+   }
+
+   #footer .social-connections {
+      margin-top: -4vh;
+   }
+
+   #footer .social-connections img {
+      width: 30px;
+   }
+
+   .subscription-form input[type="email"] {
+      width: 65%;
+      height: 1.8rem;
+      font-size: 0.8rem;
+   }
+
+   .subscription-form input[type="submit"] {
+      height: 1.8rem;
+      font-size: 0.8rem;
+   }
+
+   .location-and-language > .language-form select {
+      height: 1.6rem;
+      font-size: 0.75rem;
+   }
+
+   .location-and-language > .location-form select {
+      height: 1.6rem;
+      font-size: 0.75rem;
+   }
+
+   #footer .bottom-bar-links > a {
+      font-size: 0.6rem;
+   }
+
+   #footer .made-in-berlin {
+      column-gap: 0.5rem;
+   }
+
+   #footer .made-in-berlin > p {
+      font-size: 0.6rem;
+   }
+
+   #footer .made-in-berlin > img {
+      height: 36px;
+   }
+
+   .bottom-bar {
+      margin-top: 2rem;
+   }
+
+   /* * For About-Page Styles */
+   .about-text {
+      width: 65%;
+   }
+
+   .job-teaser-text > p, .job-teaser-text > a {
+      font-size: 1.4rem;
+   }
+}

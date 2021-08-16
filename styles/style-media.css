@@ -38,7 +38,7 @@
       padding: 3rem 2.5rem 0 3rem;
    }
 
-   .job-teaser-text > p {
+   .job-teaser-text > p, .job-teaser-text > a {
       margin-bottom: 1.5rem;
    }
 }
@@ -72,7 +72,6 @@
    }
 
    .subscription-form input[type="email"] {
-      width: 65%;
       height: 1.8rem;
       font-size: 0.8rem;
    }
@@ -119,5 +118,185 @@
 
    .job-teaser-text > p, .job-teaser-text > a {
       font-size: 1.4rem;
+   }
+}
+
+
+@media all and (max-width: 1024px) {
+   /* ! For Global Styles */
+   #main-nav .left-align {
+      display: none;
+   }
+
+   #main-nav .mobile-menu {
+      display: initial;
+   }
+
+
+   /* * For About-Page Styles */
+   .about-text {
+      width: 75%;
+   }
+}
+
+
+@media all and (max-width: 950px) {
+   /* ! For Global Styles */
+   #main-nav {
+      grid-template-columns: 120px 1fr 8fr;
+   }
+
+   .footer-grid {
+      display: grid;
+      grid-template-columns: 3fr 3fr 2fr;
+      grid-template-rows: 8vh 12vh 3vh 15vh 17vh 12vh 32px;
+      
+      grid-template-areas:
+         "header header header"
+         "ableton-connect edu-connect ."
+         "social-connect edu-connect ."
+         "community-connect distro-connect ."
+         "newsletter newsletter ."
+         "location-lang location-lang ."
+         "bottom-bar bottom-bar bottom-bar";
+      
+   }
+
+   .subscription-form input[type="email"] {
+      width: 70%;
+   }
+}
+
+
+@media all and (max-width: 900px) {
+   /* ! For Global Styles */
+   .footer-grid {
+      grid-template-columns: 3fr 3fr 1.5fr;
+   }
+
+   /* * For About-Page Styles */
+   .ableton-a2 {
+      grid-template-rows: repeat(2, 25vh);
+
+      grid-template-areas:
+         "img-1 img-3"
+         "img-2 img-3";
+   }
+}
+
+
+@media all and (max-width: 850px) {
+   /* ! For Global Styles */
+   .footer-grid {
+      grid-template-columns: 3fr 3fr 1fr;
+   }
+
+   /* * For About-Page Styles */
+   .job-teaser {
+      grid-template-rows: 30vh;
+   }
+   
+   .job-teaser-text > p, .job-teaser-text > a {
+      font-size: 1rem;
+   }
+}
+
+
+@media all and (max-width: 800px) {
+   /* ! For Global Styles */
+   .footer-grid {
+      grid-template-columns: 3fr 3fr 0.5fr;
+   }
+}
+
+
+@media all and (max-width: 750px) {
+   /* ! For Global Styles */
+   .footer-grid {
+      display: grid;
+      grid-template-columns: 3fr 3fr;
+      grid-template-rows: 8vh 12vh 3vh 15vh 17vh 12vh 32px;
+      
+      grid-template-areas:
+         "header header"
+         "ableton-connect edu-connect"
+         "social-connect edu-connect"
+         "community-connect distro-connect"
+         "newsletter newsletter"
+         "location-lang location-lang"
+         "bottom-bar bottom-bar";
+      
+   }
+
+   /* * For About-Page Styles */
+   .about-text {
+      width: 85%;
+   }
+
+   .promo-video {
+      width: 85%;
+   }
+
+   .promo-video > iframe {
+      display: block;
+      width: 75%;
+      margin: 0 auto;
+   }
+}
+
+
+@media all and (max-width: 700px) {
+   /* ! For Global Styles */
+   #footer .bottom-bar {
+      flex-direction: column;
+      row-gap: 1rem;
+   }
+
+   #footer .bottom-bar-links {
+      align-self: flex-start;
+   }
+
+   #footer .made-in-berlin {
+      margin-left: initial;
+   }
+}
+
+
+@media all and (max-width: 650px) {
+   /* ! For Global Styles */
+   .link-list.right-align > .link-list-item {
+      display: none;
+   }
+
+   .link-list-mobile {
+      display: initial;
+      margin-top: 2px;
+   }
+
+   /* * For About-Page Styles */
+   .job-teaser-text {
+      padding: 2rem 1.8rem 0 2rem;
+   }
+}
+
+
+@media all and (max-width: 550px) {
+   /* ! For Global Styles */
+   .footer-grid {
+      grid-template-rows: 8vh 12vh 3vh 15vh 17vh 12vh 18vh;
+   }
+
+   #footer .bottom-bar {
+      flex-direction: column;
+   }
+
+   #footer .bottom-bar-links {
+      flex-direction: column;
+      row-gap: 0.5rem;
+   }
+
+   /* * For About-Page Styles */
+   .job-teaser-text > p, .job-teaser-text > a {
+      font-size: 0.8rem;
    }
 }

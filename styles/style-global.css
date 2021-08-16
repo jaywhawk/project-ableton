@@ -81,14 +81,30 @@ body {
    margin-right: calc(2rem + 10px);
 }
 
-#main-nav .link-list a {
+#main-nav .link-list a, #main-nav .mobile-menu a {
    font-size: 1.2rem;
    font-weight: 600;
    color: rgb(56, 71, 79);
 }
 
+
 #main-nav .link-list a.promo-link, a.promo-link {
    color: rgb(0, 0, 255);
+}
+
+#main-nav .mobile-menu, .link-list-mobile {
+   display: none;
+}
+
+#main-nav .mobile-menu > a {
+   display: flex;
+   flex-direction: row;
+   column-gap: 0.75rem;
+   align-items: flex-start;
+}
+
+#main-nav .mobile-menu > a > .hover-menu {
+   margin-top: 2px;
 }
 
 #main {

@@ -16,6 +16,8 @@
    <link rel="stylesheet" type="text/css" href="styles/style-global.css">
    <link rel="stylesheet" type="text/css" href="styles/style-about.css">
    <link rel="stylesheet" type="text/css" href="styles/style-media.css">
+
+   <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
 </head>
 
 <body>
@@ -25,12 +27,19 @@
             <a href="index.html" title="Home of Ableton"><img src="images/ableton-logo.png" alt="Ableton Logo" class="ableton-logo"></a>
          </div>
 
-         <div class="link-list">
+         <div class="mobile-menu">
+            <a href="menu.html">
+               <span>Menu</span>
+               <span class="hover-menu"><i class="fas fa-chevron-down"></i></span>
+            </a>
+         </div>
+
+         <div class="link-list left-align">
             <a href="live.html">Live</a>
             <a href="push.html">Push</a>
             <a href="link.html">Link</a>
             <a href="shop.html">Shop</a>
-            <a href="packs.html" class="link-list-item left-align">Packs</a>
+            <a href="packs.html">Packs</a>
             <a href="help.html">Help</a>
             <a href="more.html" class="more-nav">
                <span>More</span>
@@ -39,9 +48,10 @@
          </div>
 
          <div class="link-list right-align">
-            <a href="trial.html" class="promo-link">Try Live for Free</a>
-            <a href="login.html">Log In</a>
-            <a href="register.html">Register</a>
+            <a href="trial.html" class="link-list-item promo-link">Try Live for Free</a>
+            <a href="login.html" class="link-list-item">Log In</a>
+            <a href="register.html" class="link-list-item">Register</a>
+            <a href="#" class="link-list-mobile"><i class="fas fa-angle-double-left"></i></a>
          </div>
       </nav>
    </header>
